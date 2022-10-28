@@ -14,7 +14,7 @@ Take a look at the following code:
 7    console.log(x);
 ```
 
-Explain why line 4 and line 6 output different numbers.
+Explain why line 4 and line 6 output different numbers. - line 4 is defined with a block while line 6 refers to the global variable
 
 ## Question 2
 
@@ -29,8 +29,8 @@ function f1()
     let y = 20
 }
 
-console.log(f1())
-console.log(y)
+console.log(f1()) = 10
+console.log(y) = error - y is not defined (only available within the function)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
@@ -48,7 +48,7 @@ function f1(val) {
 }
 
 f1(x);
-console.log(x);
+console.log(x); = 9
 
 const y = { x: 9 };
 
@@ -58,7 +58,7 @@ function f2(val) {
 }
 
 f2(y);
-console.log(y);
+console.log(y); y = {x:10}
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
